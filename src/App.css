@@ -1,38 +1,267 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+.container > div > div {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.text {
+  pointer-events: none;
+  justify-content: start !important;
+  font-family: 'Kanit', sans-serif;
+  line-height: 0px;
+  text-transform: uppercase;
+}
+
+.number {
+  font-size: 450px;
+  color: #373c4c;
+}
+
+.number span {
+  display: inline-block;
+  position: relative;
+  transform: translate3d(-35%, 0, 0);
+}
+
+.header {
+  margin-left: 350px;
+  font-size: 70px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.stripe {
+  height: 2px;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.slopeBegin {
+  background-color: #20232f;
+  clip-path: polygon(20vw 0, 70% 0, calc(70% - 20vw) 100%, 0 100%);
+}
+
+.slopeEnd {
+  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%);
+}
+
+.slopeBegin,
+.slopeEnd {
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.pink {
+  background: linear-gradient(to right, deeppink 0%, coral 100%);
+}
+
+.teal {
+  background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
+}
+
+.tomato {
+  background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111111f2;
+} 
+
+.navbar {
+  height: 90px;
+  position: fixed;
+
+}
+
+.profile-pic {
+  height: 300px;
+  margin: 0px 20px
+ 
+}
+
+.intro-line {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  justify-content: center;
+}
+
+.intro-container {
+  display: inline-flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin: 20px;
+}
+
+.intro-subheading{
+  font-size: 30px;
+  color: #f4f4f4;
+  font-weight: 600;
+}
+
+
+.intro-text {
+  font-size: 90px;
+  color: #f4f4f4;
+  font-weight: 600;
+  margin: 0px
+}
+
+/* .Home {
+  max-height: 100%;
+  width: 100%;
+
+}
+.homepage-photo{
+  height: 100%;
+  float: right;
+}
+
+.homepage-photo img {
+  height: 100%
+} */
+
+.projects {
+width: 100%;
+  justify-content: center;
+  align-items: center;
+height: 100%;
+  flex-direction: column;
+
+}
+
+.projects-header{
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.horizontal-line{
+  border: 2px solid #282c34;
+  width: 60px
+}
+
+.projects-container {
+  width: 100%
+}
+.project-card {
+  box-shadow: 0 2px 5px rgba(154,160,185,.05), 0 5px 10px rgba(166,173,201,.2);
+background-color: white;
+border-radius: 5px;
+height: 400px;
+width: 200px
+}
+
+.project-title{
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.title-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.exempla-logo{
+  height: 70px;
+  margin: 0px 20px
+}
+
+
+.project-description {
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  
+  font-size: 24px;
+}
+
+.project-info{
+  margin:30px;
+  max-width: 1000px;
+}
+
+
+.carousel .carousel-item {
+  width:600px !important;
+}
+
+.carousel .carousel-item video {
+  width:600px !important;
+}
+
+.project-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.carousel {
+  height: 300px;
+  overflow: hidden;
+  
+    width: 100%;
+    
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+@media screen and (max-width: 906px){
+  .carousel .carousel-item{
+    width: 300px !important;
+    height: auto
   }
-  to {
-    transform: rotate(360deg);
+  .carousel {
+    height: 300px;
+  }
+  .title-logo{
+    display: block;
   }
 }
+
+
+@media screen and (max-width: 800px) {
+  .profile-pic {
+    max-height: 200px; 
+  }
+}
+
