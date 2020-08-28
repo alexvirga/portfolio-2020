@@ -34,12 +34,12 @@ const Gray = ({ children }) => (
 class App extends React.Component {
   render() {
     return (
-      <Parallax ref={(ref) => (this.parallax = ref)} pages={3}>
+      <Parallax ref={(ref) => (this.parallax = ref)} pages={4}>
         <ParallaxLayer
-          offset={1}
+          offset={0}
           speed={0}
-          factor={2}
-          style={{ backgroundColor: "#b8d5ee" }}
+          factor={3}
+          style={{ backgroundColor: "rgb(158 210 254)" }}
         />
         {/* <ParallaxLayer
           offset={2}
@@ -50,7 +50,7 @@ class App extends React.Component {
 
 
 
-        <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
+        <ParallaxLayer offset={0} speed={0.8} style={{ opacity: 0.1 }}>
           <img
             src={url("cloud")}
             style={{ display: "block", width: "20%", marginLeft: "55%" }}
@@ -61,7 +61,7 @@ class App extends React.Component {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
+        <ParallaxLayer offset={1.35} speed={0.9} style={{ opacity: 0.1 }}>
           <img
             src={url("cloud")}
             style={{ display: "block", width: "20%", marginLeft: "70%" }}
@@ -72,7 +72,7 @@ class App extends React.Component {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
+        <ParallaxLayer offset={0.8} speed={1} style={{ opacity: 0.2 }}>
           <img
             src={url("cloud")}
             style={{ display: "block", width: "10%", marginLeft: "10%" }}
@@ -83,7 +83,7 @@ class App extends React.Component {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
+        <ParallaxLayer offset={0.5} speed={-.1} style={{ opacity: 0.3 }}>
           <img
             src={url("cloud")}
             style={{ display: "block", width: "20%", marginLeft: "60%" }}
@@ -113,6 +113,7 @@ class App extends React.Component {
         <ParallaxLayer
           offset={0}
           speed={0.4}
+          factor={1}
           style={{
             display: "flex",
             alignItems: "center",
@@ -125,8 +126,8 @@ class App extends React.Component {
 
         <ParallaxLayer
           offset={1}
-          speed={0.2}
-          factor={2}
+          speed={.2}
+          factor={3}
           style={{
             display: "flex",
             alignItems: "center",

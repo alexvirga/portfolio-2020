@@ -123,14 +123,14 @@
 
 .intro-subheading{
   font-size: 30px;
-  color: #f4f4f4;
+  color: #414141;
   font-weight: 600;
 }
 
 
 .intro-text {
   font-size: 90px;
-  color: #f4f4f4;
+  color: #414141;
   font-weight: 600;
   margin: 0px
 }
@@ -166,25 +166,32 @@ height: 100%;
 
 .horizontal-line{
   border: 2px solid #282c34;
-  width: 60px
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.horizontal-line-grey{
+  border: 1px solid #282c3454;
+  width: 70%
 }
 
 .projects-container {
   width: 100%
 }
-.project-card {
-  box-shadow: 0 2px 5px rgba(154,160,185,.05), 0 5px 10px rgba(166,173,201,.2);
-background-color: white;
-border-radius: 5px;
-height: 400px;
-width: 200px
-}
+
 
 .project-title{
   text-align: center;
-  color: #000000;
+  color: #ffffff;;
   font-weight: 400;
   margin: 0px;
+transition: all .05s ease-in;
+  font-size: 4em;
+}
+
+.title-logo:hover{
+cursor: pointer;
+transform: scale(1.05);
 }
 
 .title-logo{
@@ -192,7 +199,8 @@ width: 200px
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  transition: all .2s ease-in;
+ 
 }
 
 .exempla-logo{
@@ -203,21 +211,45 @@ width: 200px
 
 .project-description {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-weight: 400;
-  
+  margin: 20px;
   font-size: 24px;
 }
 
 .project-info{
-  margin:30px;
+  margin:30px 30px 0px 30px;
   max-width: 1000px;
+  width: 100%
 }
+
+.demo-link{
+  margin-right: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.github-link{
+margin-left: 5px;
+font-size: 1.2em;
+font-weight: 700;
+}
+
+.demo-link:hover{
+cursor: pointer;
+}
+
+.github-link:hover{
+cursor: pointer;
+}
+
 
 
 .carousel .carousel-item {
   width:600px !important;
 }
+
+
 
 .carousel .carousel-item video {
   width:600px !important;
@@ -229,11 +261,12 @@ width: 200px
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  background-color: #8835fe7d;
 }
 
 
 .carousel {
-  height: 300px;
+  top: -50px;
   overflow: hidden;
   
     width: 100%;
@@ -242,26 +275,130 @@ width: 200px
     perspective: 500px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
+    -webkit-transform-origin: 0% -50%;
+    transform-origin: 0% -50%;
+ 
 }
+
+
+/* -------- Card ------ */
+.project-cards {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.project-card {
+  display: flex;
+  width: min-content;
+  flex-direction: column;
+ margin: 20px;
+    box-shadow: 0 2px 5px rgba(154,160,185,.05), 0 5px 10px rgba(166,173,201,.2);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(154,160,185,.05), 0 5px 10px rgba(166,173,201,.2);
+  
+}
+
+
+
+.project-image{
+  height: 200px;
+  width: auto;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.card-info{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+
+
+
+.card-title{
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.card-description {
+  font-size: 1.3em;
+  text-align: center;
+  margin: 10px;
+
+}
+
+.card-links{
+  text-align: center;
+  
+}
+
+
 @media screen and (max-width: 906px){
-  .carousel .carousel-item{
-    width: 300px !important;
-    height: auto
-  }
-  .carousel {
-    height: 300px;
-  }
+
   .title-logo{
     display: block;
   }
 }
 
 
+
 @media screen and (max-width: 800px) {
   .profile-pic {
     max-height: 200px; 
+    
+  }
+  .carousel .carousel-item{
+    width: 300px !important;
+    height: auto
+  }
+  .carousel {
+    height: 300px;
+    top: -100px
+  }
+  .project-image{
+    height: auto;
+   width: 100%;
+  
+  }
+  .project-card{
+    height: auto;
+    width: 43%;
+    margin: 10px 5px;
+   
+}
+.card-title{
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.card-description {
+  font-size: 1em;
+  text-align: center;
+  margin: 10px;
+
+}
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .carousel .carousel-item{
+    width: 300px !important;
+    height: auto
+  }
+  .carousel {
+    height: 300px;
+    top: -100px
   }
 }
 
