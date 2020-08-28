@@ -109,6 +109,36 @@ class App extends React.Component {
           />
         </ParallaxLayer>
 
+        <ParallaxLayer offset={2.3} speed={0.8} style={{ opacity: 0.1 }}>
+          <img
+            src={url("cloud")}
+            style={{ display: "block", width: "12%", marginLeft: "55%" }}
+          />
+          <img
+            src={url("cloud")}
+            style={{ display: "block", width: "10%", marginLeft: "15%" }}
+          />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1.8} speed={0.3} style={{ opacity: .2 }}>
+          <img
+            src={url("cloud")}
+            style={{ display: "block", width: "10%", marginLeft: "70%" }}
+          />
+
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={2.1} speed={1} style={{ opacity: 0.2 }}>
+          <img
+            src={url("cloud")}
+            style={{ display: "block", width: "10%", marginLeft: "10%" }}
+          />
+
+                    <img
+            src={url("cloud")}
+            style={{ display: "block", width: "5%", marginLeft: "75%" }}
+          />
+        </ParallaxLayer>
+
 
         <ParallaxLayer
           offset={0}
@@ -121,12 +151,18 @@ class App extends React.Component {
             top: "-2%",
           }}
         >
+          <div>
           <Intro />
+          <img className="chevron"src={require("./Images/chevron.png")} onClick={() => this.parallax.scrollTo(1)}></img>
+
+          </div>
+        
+         
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={1}
-          speed={.2}
+          speed={.1}
           factor={3}
           style={{
             display: "flex",
