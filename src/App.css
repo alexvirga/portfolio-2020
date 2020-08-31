@@ -229,7 +229,23 @@ transform: scale(1.05);
   color: #ffffff;
   font-weight: 400;
   margin: 20px;
-  font-size: 24px;
+  font-size: 1.5em;
+}
+
+.github-link-exempla{
+  margin-left: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: white;
+  text-decoration: underline;
+  }
+
+.demo-link-exempla{
+  margin-right: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: white;
+  text-decoration: underline;
 }
 
 .project-info{
@@ -260,8 +276,12 @@ cursor: pointer;
 
 
 
-.carousel .carousel-item {
+.carousel-1 .carousel .carousel-item {
   width:600px !important;
+}
+
+.carousel-2 .carousel .carousel-item {
+  width:500px !important;
 }
 
 
@@ -280,7 +300,7 @@ cursor: pointer;
 }
 
 
-.carousel {
+.carousel-1 .carousel {
   top: -50px;
   overflow: hidden;
   
@@ -295,6 +315,21 @@ cursor: pointer;
  
 }
 
+.carousel-2 .carousel{
+  top: -15em;
+  height: 700px;
+  overflow: hidden;
+    width: 100%;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% -50%;
+    transform-origin: 0% -50%;
+}
+
+
+
 
 /* -------- Card ------ */
 .project-cards {
@@ -303,18 +338,18 @@ cursor: pointer;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: flex-start;
+
 }
 
 .project-card {
   display: flex;
-  width: min-content;
+  width: 100%;
   flex-direction: column;
- margin: 20px;
-    box-shadow: 0 2px 5px rgba(154,160,185,.05), 0 5px 10px rgba(166,173,201,.2);
+
   background-color: white;
   border-radius: 5px;
+  border: 3px solid rgb(240, 240, 240);
   box-shadow: 0 2px 5px rgba(154,160,185,.05), 0 5px 10px rgba(166,173,201,.2);
-  
 }
 
 
@@ -341,12 +376,14 @@ cursor: pointer;
   text-align: center;
   margin-top: 20px;
   font-weight: 500;
+  color: black
 }
 
 .card-description {
   font-size: 1.3em;
   text-align: center;
   margin: 10px;
+  color: black
 
 }
 
@@ -355,6 +392,40 @@ cursor: pointer;
   
 }
 
+/* ---- About ---- */
+
+.about-line {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  justify-content: center;
+}
+
+.about-container {
+  display: inline-flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin: 20px;
+}
+
+.about-subheading{
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+
+
+.about-text {
+  font-size: 90px;
+  color: white;
+  font-weight: 600;
+  margin: 0px
+}
+
+
+.carousel-1{
+  width: 100%
+}
 
 @media screen and (max-width: 906px){
 
@@ -370,24 +441,35 @@ cursor: pointer;
     max-height: 200px; 
     
   }
+  .carousel-2 .carousel .carousel-item{
+    width: 300px !important;
+    height: auto
+  }
+  .carousel-1 .carousel {
+    height: 300px;
+  
+  }
   .carousel .carousel-item{
     width: 300px !important;
     height: auto
   }
-  .carousel {
-    height: 300px;
-    top: -100px
-  }
+  .carousel-2 .carousel {
+    height: 300px;}
+  
   .project-image{
     height: auto;
    width: 100%;
+   max-height: 150px;
   
   }
-  .project-card{
+  .carousel-1 .project-card{
     height: auto;
     width: 43%;
     margin: 10px 5px;
    
+}
+.carousel-2 .project-card{
+  width: 100%
 }
 .card-title{
   font-size: 1.5em;
@@ -402,18 +484,39 @@ cursor: pointer;
   margin: 10px;
 
 }
+.projects-header{
+  font-size: 2em;
+}
+.project-description{
+  font-size: 1.3em;
+}
+.horizontal-line{
+  margin-bottom: 2em;
+}
+.project-title{
+  font-size: 3em;
+}
+.exempla-logo{
+  height: 4em;
+}
+.carousel-2 .carousel {
+  height: 500px;
+  top: -100px
+}
 }
 
 
 @media screen and (max-width: 600px) {
 
-  .carousel .carousel-item{
+ .carousel-1 .carousel .carousel-item{
     width: 300px !important;
     height: auto
   }
-  .carousel {
+  .carousel-1 .carousel {
     height: 300px;
     top: -100px
   }
+
+
 }
 

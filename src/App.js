@@ -5,6 +5,7 @@ import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import alexplanet from "./alexplanet.png";
 import Projects from "./Components/Projects";
 import Intro from "./Components/Intro";
+import About from "./Components/About";
 
 const url = (name, wrap = false) =>
   `${
@@ -38,7 +39,7 @@ class App extends React.Component {
         <ParallaxLayer
           offset={0}
           speed={0}
-          factor={3}
+          factor={2.75}
           style={{ backgroundColor: "rgb(158 210 254)" }}
         />
         {/* <ParallaxLayer
@@ -163,7 +164,7 @@ class App extends React.Component {
         <ParallaxLayer
           offset={1}
           speed={.1}
-          factor={3}
+          factor={2.5}
           style={{
             display: "flex",
             alignItems: "center",
@@ -171,6 +172,20 @@ class App extends React.Component {
           }}
         >
           <Projects />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={4}
+          speed={0}
+          factor={1}
+          style={{
+            height: "0px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {/* <About />  */}
         </ParallaxLayer>
       </Parallax>
     );
