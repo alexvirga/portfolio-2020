@@ -161,18 +161,18 @@ class App extends React.Component {
          
         </ParallaxLayer>
 
-        // <ParallaxLayer
-        //   offset={1}
-        //   speed={.1}
-        //   factor={2.5}
-        //   style={{
-        //     display: "flex",
-        //     alignItems: "center",
-        //     justifyContent: "center",
-        //   }}
-        // >
-        //   <Projects />
-        // </ParallaxLayer>
+        <ParallaxLayer
+          offset={1}
+          speed={.1}
+          factor={2.5}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Projects />
+        </ParallaxLayer>
 
         <ParallaxLayer
           offset={4}
