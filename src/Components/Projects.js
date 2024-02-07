@@ -83,12 +83,12 @@ function Projects() {
           <br />
           <br />
         </div>
-        <h1 className="projects-header"> Past Projects: </h1>
-        <hr className="horizontal-line" />
-        <div className="carousel-2">
-          <div className="carousel">
+        {/* <h1 className="projects-header"> Past Projects: </h1> */}
+        {/* <hr className="horizontal-line" /> */}
+        {/* <div className="carousel-2">
+          <div className="carousel"> */}
             {/*-------- Ourmask --------*/}
-            <a className="carousel-item">
+            {/* <a className="carousel-item">
               <div className="carousel-img">
                 <div className="project-card">
                   <img
@@ -114,10 +114,10 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            </a>
+            </a> */}
 
             {/*-------- Pipeline Portfolios --------*/}
-            <a className="carousel-item">
+            {/* <a className="carousel-item">
               <div className="carousel-img">
                 <div className="project-card">
                   <img
@@ -144,10 +144,10 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            </a>
+            </a> */}
 
             {/*-------- Color Generator --------*/}
-            <a className="carousel-item">
+            {/* <a className="carousel-item">
               <div className="carousel-img">
                 <div className="project-card">
                   <img
@@ -173,10 +173,10 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            </a>
+            </a> */}
 
             {/*-------- Banter --------*/}
-            <a className="carousel-item">
+            {/* <a className="carousel-item">
               <div className="carousel-img">
                 <div className="project-card">
                   <img
@@ -202,10 +202,10 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            </a>
+            </a> */}
 
             {/*-------- Artwork --------*/}
-            <a className="carousel-item">
+            {/* <a className="carousel-item">
               <div className="carousel-img">
                 <div className="project-card">
                   <img
@@ -231,10 +231,10 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            </a>
+            </a> */}
 
             {/*-------- Maphunt --------*/}
-            <a className="carousel-item">
+            {/* <a className="carousel-item">
               <div className="carousel-img">
                 <div className="project-card">
                   <img
@@ -255,14 +255,14 @@ function Projects() {
                       </a>
                       <a className="github-link" href="url">
                         Github
-                      </a>
-                    </span>
+                      </a> */}
+                    {/* </span>
                   </div>
                 </div>
               </div>
-            </a>
-          </div>
-        </div>
+            </a> */}
+          {/* </div>
+        </div> */}
       </div>
     </div>
   );
